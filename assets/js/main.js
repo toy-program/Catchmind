@@ -1,3 +1,3 @@
-import { handleMessageNotifi } from "./chat";
-
-co;
+import "./sockets";
+import "./login";
+import "./notifications";
