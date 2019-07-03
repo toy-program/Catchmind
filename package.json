@@ -1,0 +1,33 @@
+{
+  "name": "catchmind",
+  "version": "1.0.0",
+  "description": "SocketIO Game",
+  "main": "index.js",
+  "repository": "https://github.com/toy-program/Catchmind.git",
+  "author": "changhoi <0417kch@naver.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "@babel/node": "^7.4.5",
+    "babelify": "^10.0.0",
+    "del": "^5.0.0",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-sass": "^4.0.2",
+    "morgan": "^1.9.1",
+    "node-sass": "^4.12.0",
+    "pug": "^2.0.4",
+    "socket.io": "^2.2.0"
+  },
+  "scripts": {
+    "dev:server": "nodemon --exec babel-node src/server.js --ignore assets/ --ignore src/static",
+    "dev:assets": "gulp"
+  }
+}
